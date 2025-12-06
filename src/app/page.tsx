@@ -1,3 +1,6 @@
+'use client';
+
+import { useRef } from 'react';
 import Header from '@/components/layout/Header';
 import Hero from '@/components/layout/Hero';
 import Footer from '@/components/layout/Footer';
@@ -6,8 +9,10 @@ import CategoryShowcase from '@/components/layout/CategoryShowcase';
 import Link from 'next/link';
 import TechnicalPattern from '@/components/TechnicalPattern';
 import BlueprintSketchLayer from '@/components/BlueprintSketchLayer';
+import DrawableBackground, { DrawableBackgroundRef } from '@/components/DrawableBackground';
 
 export default function HomePage() {
+  const drawableBackgroundRef = useRef<DrawableBackgroundRef>(null);
   return (
     <div className="min-h-screen flex flex-col relative">
       {/* Extended Technical Pattern Background with Gradient Effect */}
@@ -31,6 +36,15 @@ export default function HomePage() {
         {/* Gradient overlay for darkening/brightening effect */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/15 to-transparent" style={{ backgroundSize: '100% 200%' }}></div>
       </div>
+
+      {/* Drawable Background Canvas - Always Active */}
+      <DrawableBackground
+        ref={drawableBackgroundRef}
+        enabled={true}
+        strokeColor="rgba(165, 201, 238, 0.56)"
+        strokeWidth={3}
+        opacity={1}
+      />
 
       <div className="relative z-10">
         <Header />
