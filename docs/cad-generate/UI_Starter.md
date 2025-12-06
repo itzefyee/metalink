@@ -1,6 +1,6 @@
 # Starter UI Extraction - Landing Page & CAD Generator
 
-This document contains the extracted landing page and CAD generator page from SteelSmart, ready to be reused as a starter UI in another project.
+This document contains the extracted landing page and CAD generator page from Metalink, ready to be reused as a starter UI in another project.
 
 ## Table of Contents
 
@@ -123,7 +123,7 @@ export default function HomePage() {
             <BlueprintSketchLayer />
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-white mb-4">Why Choose SteelSmart?</h2>
+                <h2 className="text-3xl font-bold text-white mb-4">Why Choose Metalink?</h2>
                 <p className="text-lg text-white/85 max-w-2xl mx-auto">
                   Advanced AI technology meets manufacturing expertise to deliver the best steel parts sourcing experience.
                 </p>
@@ -696,7 +696,7 @@ The design uses Tailwind's default breakpoints:
 
 4. **CAD Generator**: The `CADGenerator` component is complex and includes API integration. You may want to create a simplified version or integrate with your own backend.
 
-5. **Branding**: Replace SteelSmart branding (logo, company name) with your own.
+5. **Branding**: Replace Metalink branding (logo, company name) with your own.
 
 6. **Routes**: Update navigation links to match your project's routing structure.
 

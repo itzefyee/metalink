@@ -103,4 +103,78 @@ export interface GenerationProgress {
   elapsed_time?: number;
 }
 
+/**
+ * CAD Drawing Analyzer Types
+ */
+
+/**
+ * Extracted Specifications from Drawing
+ */
+export interface ExtractedSpecs {
+  dimensions?: string;
+  material?: string;
+  loadRequirements?: string;
+  componentType?: string;
+  tolerance?: string;
+}
+
+/**
+ * Product Recommendation
+ */
+export interface Product {
+  id: string;
+  name: string;
+  category: string;
+  material?: string;
+  price?: number;
+  images?: string[];
+  specifications?: Record<string, any>;
+}
+
+/**
+ * Recommendation Score
+ */
+export interface RecommendationScore {
+  productId: string;
+  score: number;
+  reasoning: string;
+  matchedSpecs: string[];
+}
+
+/**
+ * Drawing Analysis Result
+ */
+export interface DrawingAnalysis {
+  extractedSpecs: ExtractedSpecs;
+  recommendedProducts: Product[];
+  totalRecommendations: number;
+  confidence: number;
+  reasoning: string;
+  analysisId: string;
+  alternativeSuggestions?: {
+    message: string;
+    suggestedCategories: string[];
+  };
+}
+
+/**
+ * File Upload State
+ */
+export interface FileUploadState {
+  file: File | null;
+  progress: number;
+  status: 'idle' | 'uploading' | 'success' | 'error';
+  error?: string;
+}
+
+/**
+ * API Response Wrapper
+ */
+export interface APIResponse<T> {
+  success: boolean;
+  data?: T;
+  error?: string;
+  message?: string;
+}
+
 

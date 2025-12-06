@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ConvexClientProvider from "@/components/ConvexClientProvider";
+import { AuthProvider } from "@/components/auth/AuthProvider";
 import Chatbot from "@/components/Chatbot";
 import { QueryProvider } from "@/providers/QueryProvider";
 
@@ -29,8 +30,10 @@ export default function RootLayout({
       >
         <QueryProvider>
           <ConvexClientProvider>
-            {children}
-            <Chatbot />
+            <AuthProvider>
+              {children}
+              <Chatbot />
+            </AuthProvider>
           </ConvexClientProvider>
         </QueryProvider>
       </body>

@@ -3,9 +3,10 @@ import { v } from "convex/values";
 import { action } from "../_generated/server";
 import { api } from "../_generated/api";
 import { Id } from "../_generated/dataModel";
-import Anthropic from "@anthropic-ai/sdk";
 import { createHash } from "crypto";
-import { ml } from "@kittycad/lib";
+// Dynamic imports for large packages to reduce bundle size
+// import Anthropic from "@anthropic-ai/sdk";
+// import { ml } from "@kittycad/lib";
 
 /**
  * Enhanced CAD Generation Action
@@ -40,6 +41,9 @@ async function pollZooDevOperation(
   operationId: string,
   format: string
 ): Promise<Blob> {
+  // Dynamic import to avoid bundling large package
+  const { ml } = await import("@kittycad/lib");
+  
   for (let attempt = 1; attempt <= MAX_POLL_ATTEMPTS; attempt++) {
     try {
       // Check operation status using KittyCAD library
@@ -227,6 +231,8 @@ export const generateFromDescription = action({
       throw new Error("ANTHROPIC_API_KEY environment variable is not set. Please set it in your Convex dashboard under Settings > Environment Variables.");
     }
     
+    // Dynamic import to avoid bundling large package
+    const { Anthropic } = await import("@anthropic-ai/sdk");
     const anthropic = new Anthropic({ apiKey: anthropicApiKey });
     
     const materialGrade = specifications.material?.grade || "steel";
@@ -265,6 +271,9 @@ export const generateFromDescription = action({
     const format = (args.format || "step") as "step" | "stl" | "obj" | "gltf" | "glb";
     
     try {
+      // Dynamic import to avoid bundling large package
+      const { ml } = await import("@kittycad/lib");
+      
       // Call Zoo Dev API using KittyCAD library
       const result = await ml.create_text_to_cad({
         body: {

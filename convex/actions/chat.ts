@@ -2,8 +2,9 @@
 import { v } from "convex/values";
 import { action } from "../_generated/server";
 import { api } from "../_generated/api";
-import Anthropic from "@anthropic-ai/sdk";
 import { MCP_STANDARDS } from "../mcp/config";
+// Dynamic import for large package to reduce bundle size
+// import Anthropic from "@anthropic-ai/sdk";
 
 export const sendMessage = action({
   args: {
@@ -63,6 +64,8 @@ export const sendMessage = action({
       throw new Error("ANTHROPIC_API_KEY environment variable is not set. Please set it in your Convex dashboard under Settings > Environment Variables.");
     }
     
+    // Dynamic import to avoid bundling large package
+    const { Anthropic } = await import("@anthropic-ai/sdk");
     const anthropic = new Anthropic({ apiKey: anthropicApiKey });
 
     // System prompt with MCP context

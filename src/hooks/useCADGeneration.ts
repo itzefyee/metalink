@@ -48,8 +48,9 @@ export function useGenerationStatus(generationId?: string) {
     queryKey: ['cad-status', generationId],
     queryFn: () => CADAPI.getStatus(generationId!),
     enabled: !!generationId,
-    refetchInterval: (data) => {
+    refetchInterval: (query) => {
       // Stop polling if completed or failed
+      const data = query.state.data;
       if (data?.status === 'completed' || data?.status === 'failed') {
         return false;
       }
@@ -129,5 +130,6 @@ export function useCADBatch() {
     downloadMultiple,
   };
 }
+
 
 

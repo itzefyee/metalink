@@ -1,6 +1,6 @@
 # CAD Generation System - Complete Extraction
 
-This document contains the complete CAD generation system extracted from SteelSmart, ready to be reused in another project. The system provides text-to-CAD generation using the Zoo Dev API (KittyCAD) with full history tracking, file storage, and React integration.
+This document contains the complete CAD generation system extracted from Metalink, ready to be reused in another project. The system provides text-to-CAD generation using the Zoo Dev API (KittyCAD) with full history tracking, file storage, and React integration.
 
 ## Table of Contents
 
@@ -1762,7 +1762,7 @@ describe('POST /api/generate-cad', () => {
 
 ## License
 
-This code is extracted from SteelSmart and is provided as-is for reuse in other projects. Adapt as needed for your specific requirements.
+This code is extracted from Metalink and is provided as-is for reuse in other projects. Adapt as needed for your specific requirements.
 
 ---
 

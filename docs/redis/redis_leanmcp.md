@@ -32,8 +32,8 @@
 
 ```bash
 # Create Next.js project
-npx create-next-app@latest steelsmart-v2 --typescript --tailwind --app
-cd steelsmart-v2
+npx create-next-app@latest metalink-v2 --typescript --tailwind --app
+cd metalink-v2
 
 # Install ALL dependencies
 npm install convex @anthropic-ai/sdk opencascade.js @react-three/fiber @react-three/drei three dxf-parser
@@ -185,7 +185,7 @@ mkdir -p mcp/resources mcp/prompts mcp/tools
 import { createMCPServer } from "leanmcp";
 
 export const mcpServer = createMCPServer({
-  name: "steelsmart-standards",
+  name: "metalink-standards",
   version: "1.0.0",
   description: "Steel manufacturing standards and compliance knowledge base",
 });
@@ -676,7 +676,7 @@ export async function POST(request: Request) {
 // List available resources and tools
 export async function GET() {
   return Response.json({
-    name: "steelsmart-standards",
+    name: "metalink-standards",
     version: "1.0.0",
     resources: [
       "standards://aisc-360-edge-distance",
@@ -1209,7 +1209,7 @@ export const sendMessage = action({
     const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
     // System prompt with MCP context awareness
-    const systemPrompt = `You are SteelBot, an expert assistant for SteelSmart CAD Generator.
+    const systemPrompt = `You are SteelBot, an expert assistant for Metalink CAD Generator.
 
 You have access to comprehensive steel manufacturing standards through the MCP server:
 - AISC 360 (structural steel specifications)
@@ -1755,7 +1755,7 @@ export default function AnalyticsDashboard() {
 
   return (
     <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold mb-8">SteelSmart Analytics</h1>
+      <h1 className="text-3xl font-bold mb-8">Metalink Analytics</h1>
       
       <div className="grid grid-cols-3 gap-6">
         <div className="bg-white p-6 rounded-2xl shadow-lg">
@@ -1791,7 +1791,7 @@ ZOO_DEV_API_KEY=sk-...
 ANTHROPIC_API_KEY=sk-ant-...
 UPSTASH_REDIS_REST_URL=https://...upstash.io
 UPSTASH_REDIS_REST_TOKEN=...
-LEANMCP_BASE_URL=https://steelsmart-v2.vercel.app
+LEANMCP_BASE_URL=https://metalink-v2.vercel.app
 ```
 
 **Deploy Commands:**
@@ -1803,7 +1803,7 @@ npx convex deploy --prod
 vercel --prod
 
 # Verify LeanMCP endpoint
-curl https://steelsmart-v2.vercel.app/api/mcp
+curl https://metalink-v2.vercel.app/api/mcp
 
 # Test Redis connection
 npx @upstash/redis-cli --url $UPSTASH_REDIS_REST_URL --token $UPSTASH_REDIS_REST_TOKEN

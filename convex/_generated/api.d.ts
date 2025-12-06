@@ -9,12 +9,15 @@
  */
 
 import type * as actions_aiAnalysis from "../actions/aiAnalysis.js";
+import type * as actions_auth from "../actions/auth.js";
 import type * as actions_chat from "../actions/chat.js";
 import type * as actions_generateCAD from "../actions/generateCAD.js";
-import type * as actions_parseSTEP from "../actions/parseSTEP.js";
 import type * as actions_validateCompliance from "../actions/validateCompliance.js";
+import type * as drawingAnalyses from "../drawingAnalyses.js";
+import type * as files from "../files.js";
 import type * as mcp_config from "../mcp/config.js";
 import type * as mutations from "../mutations.js";
+import type * as products from "../products.js";
 import type * as queries from "../queries.js";
 import type * as templates from "../templates.js";
 import type * as validators_standards from "../validators/standards.js";
@@ -27,12 +30,15 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   "actions/aiAnalysis": typeof actions_aiAnalysis;
+  "actions/auth": typeof actions_auth;
   "actions/chat": typeof actions_chat;
   "actions/generateCAD": typeof actions_generateCAD;
-  "actions/parseSTEP": typeof actions_parseSTEP;
   "actions/validateCompliance": typeof actions_validateCompliance;
+  drawingAnalyses: typeof drawingAnalyses;
+  files: typeof files;
   "mcp/config": typeof mcp_config;
   mutations: typeof mutations;
+  products: typeof products;
   queries: typeof queries;
   templates: typeof templates;
   "validators/standards": typeof validators_standards;

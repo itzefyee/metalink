@@ -2,8 +2,8 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera, Environment } from "@react-three/drei";
 import { Suspense, useEffect, useState } from "react";
-import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
 import * as THREE from "three";
+import { STLLoader } from "three/examples/jsm/loaders/STLLoader.js";
 
 function Model({ stepFileUrl }: { stepFileUrl: string }) {
   const [geometry, setGeometry] = useState<THREE.BufferGeometry | null>(null);

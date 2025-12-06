@@ -40,8 +40,8 @@
 #### 1.1 Project Initialization (30 min)
 ```bash
 # Use Cursor's built-in templates
-npx create-next-app@latest steelsmart-v2 --typescript --tailwind --app
-cd steelsmart-v2
+npx create-next-app@latest metalink-v2 --typescript --tailwind --app
+cd metalink-v2
 
 # Install core dependencies
 npm install convex @anthropic-ai/sdk opencascade.js @react-three/fiber @react-three/drei three dxf-parser
@@ -846,7 +846,7 @@ export default function ComplianceReport({ generationId }) {
 import { McpServer } from "@modelcontextprotocol/sdk";
 
 const server = new McpServer({
-  name: "steelsmart-standards",
+  name: "metalink-standards",
   version: "1.0.0",
 });
 
@@ -922,7 +922,7 @@ export const sendMessage = action({
     const previousMessages = session?.messages || [];
 
     // System prompt with MCP context
-    const systemPrompt = `You are SteelBot, an expert assistant for SteelSmart CAD Generator.
+    const systemPrompt = `You are SteelBot, an expert assistant for Metalink CAD Generator.
 
 You have access to these steel manufacturing standards:
 ${MCP_STANDARDS.map(uri => `- ${uri}`).join("\n")}
@@ -1097,7 +1097,7 @@ export default function Chatbot() {
 # Push to GitHub
 git init
 git add .
-git commit -m "Initial SteelSmart v2 implementation"
+git commit -m "Initial Metalink v2 implementation"
 git remote add origin <your-repo>
 git push -u origin main
 

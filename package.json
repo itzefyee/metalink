@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint"
   },
@@ -20,9 +20,10 @@
     "framer-motion": "^12.23.25",
     "lucide-react": "^0.556.0",
     "next": "16.0.7",
-    "opencascade.js": "^1.1.1",
+    "opencascade.js": "^2.0.0-beta",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "react-dropzone": "^14.3.8",
     "three": "^0.181.2",
     "zustand": "^5.0.9"
   },
@@ -32,8 +33,10 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "cross-env": "^10.1.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.7",
+    "file-loader": "^6.2.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

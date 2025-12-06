@@ -1,0 +1,26 @@
+# Ignore large dependencies that are loaded dynamically
+# These packages are loaded at runtime, not bundled
+node_modules/opencascade.js/
+node_modules/@kittycad/lib/
+node_modules/@anthropic-ai/sdk/
+
+# Ignore generated files (they're regenerated)
+convex/_generated/
+
+# Ignore test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Ignore documentation
+**/*.md
+README.md
+
+# Ignore config files that aren't needed
+convex/tsconfig.json
+convex/opencascade.d.ts
+
+# Ignore disabled actions
+**/*.disabled
+**/*.backup

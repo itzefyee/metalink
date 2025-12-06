@@ -1,0 +1,33 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="metalinkGradientWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <filter id="metalinkShadowWhite" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5"/>
+      <feOffset dx="0" dy="1" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <circle cx="22" cy="22" r="20" fill="url(#metalinkGradientWhite)" filter="url(#metalinkShadowWhite)"/>
+  
+  <g transform="translate(22, 22)">
+    <ellipse cx="-6" cy="-2" rx="4.5" ry="3.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
+    <path d="M -6 -5.5 L -6 -8.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
+    <ellipse cx="6" cy="-2" rx="4.5" ry="3.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
+    <path d="M 6 -5.5 L 6 -8.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
+    <path d="M -6 -8.5 Q 0 -10.5 6 -8.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
+    <path d="M -6 1.5 Q 0 3.5 6 1.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
+    <line x1="-2" y1="-2" x2="2" y2="-2" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+  </g>
+</svg>
+
+
