@@ -7,17 +7,25 @@
       "src": "/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
     },
     {
       "src": "/apple-icon.svg",
       "sizes": "180x180",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ],
   "theme_color": "#3B82F6",
-  "background_color": "#FFFFFF",
+  "background_color": "#1D4ED8",
   "display": "standalone",
-  "start_url": "/"
+  "start_url": "/",
+  "orientation": "portrait-primary",
+  "scope": "/"
 }
-
