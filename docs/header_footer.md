@@ -403,3 +403,4 @@ The Header and Footer components provide a solid foundation for Metalink's navig
 
 Both components follow Next.js best practices and modern React patterns.
 
+

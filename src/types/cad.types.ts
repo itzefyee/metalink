@@ -103,3 +103,4 @@ export interface GenerationProgress {
   elapsed_time?: number;
 }
 
+

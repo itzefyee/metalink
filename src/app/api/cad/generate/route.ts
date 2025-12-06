@@ -3,11 +3,13 @@
  * POST /api/cad/generate
  * 
  * Handles CAD generation requests through Zoo Dev API
+ * Centralized error handling for all CAD generation errors
  */
 
 import { NextRequest, NextResponse } from 'next/server';
 import { ConvexHttpClient } from 'convex/browser';
 import { api } from '../../../../../convex/_generated/api';
+import { validateCADRequest } from '@/lib/cad-validation';
 
 export const runtime = 'nodejs';
 export const maxDuration = 300; // 5 minutes
@@ -17,17 +19,18 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { description, category = 'custom', format = 'step', units = 'mm', specifications, userId } = body;
 
-    // Validation
-    if (!description || description.trim().length === 0) {
+    // Validation using shared validation function
+    try {
+      validateCADRequest({
+        description,
+        category,
+        format,
+        units,
+        specifications,
+      });
+    } catch (validationError: any) {
       return NextResponse.json(
-        { error: 'Description is required' },
-        { status: 400 }
-      );
-    }
-
-    if (description.length > 1000) {
-      return NextResponse.json(
-        { error: 'Description too long (max 1000 characters)' },
+        { error: 'Validation failed', message: validationError.message },
         { status: 400 }
       );
     }

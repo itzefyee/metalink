@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066CC;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00D4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B46C1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066CC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B46C1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <g transform="translate(512, 512) scale(0.85, 1) skewX(-5.196152422706631)">
+    <circle cx="0" cy="0" r="358.4" stroke="url(#gradient1)" stroke-width="4" fill="none" filter="url(#shadow)" />
+    <circle cx="0" cy="0" r="153.6" stroke="url(#gradient1)" stroke-width="4" fill="none" />
+    <line x1="-141.68175605913416" y1="81.79999999999998" x2="-301.7232506784984" y2="174.19999999999996" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="-163.6" y1="2.00352216340507e-14" x2="-348.4" y2="4.2666694482293785e-14" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="-141.68175605913416" y1="-81.80000000000001" x2="-301.7232506784984" y2="-174.20000000000002" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="-81.80000000000007" y1="-141.68175605913413" x2="-174.20000000000013" y2="-301.72325067849835" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="-3.0052832451076046e-14" y1="-163.6" x2="-6.400004172344067e-14" y2="-348.4" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="81.80000000000001" y1="-141.68175605913416" x2="174.20000000000002" y2="-301.7232506784984" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="141.6817560591341" y1="-81.80000000000007" x2="301.7232506784983" y2="-174.20000000000013" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="163.6" y1="-4.00704432681014e-14" x2="348.4" y2="-8.533338896458757e-14" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="141.68175605913422" y1="81.79999999999988" x2="301.7232506784985" y2="174.19999999999973" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="81.79999999999995" y1="141.6817560591342" x2="174.1999999999999" y2="301.72325067849846" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="5.0088054085126745e-14" y1="163.6" x2="1.0666673620573447e-13" y2="348.4" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="-81.79999999999987" y1="141.68175605913424" x2="-174.1999999999997" y2="301.7232506784986" stroke="url(#gradient2)" stroke-width="3" />
+    <circle cx="-138.24000000000012" cy="-239.43870363832156" r="25.6" stroke="url(#gradient3)" stroke-width="3" fill="rgba(255, 255, 255, 0.9)" />
+    <circle cx="185.00123004609702" cy="-205.46468134799008" r="25.6" stroke="url(#gradient3)" stroke-width="3" fill="rgba(255, 255, 255, 0.9)" />
+    <circle cx="252.57704812902637" cy="112.45454707759711" r="25.6" stroke="url(#gradient3)" stroke-width="3" fill="rgba(255, 255, 255, 0.9)" />
+    <circle cx="-28.90002952424067" cy="274.96541363142023" r="25.6" stroke="url(#gradient3)" stroke-width="3" fill="rgba(255, 255, 255, 0.9)" />
+    <circle cx="-270.4382486508826" cy="57.48342427729405" r="25.6" stroke="url(#gradient3)" stroke-width="3" fill="rgba(255, 255, 255, 0.9)" />
+    <circle cx="0" cy="0" r="76.8" stroke="url(#gradient3)" stroke-width="4" fill="rgba(0, 212, 255, 0.08)" />
+    <circle cx="0" cy="0" r="256" stroke="url(#gradient1)" stroke-width="2" fill="none" opacity="0.5" stroke-dasharray="10,5" />
+  </g>
+</svg>

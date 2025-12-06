@@ -7,11 +7,21 @@
 'use client';
 
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { useCADGeneration, useCADHistory, useDownloadCAD } from '@/hooks/useCADGeneration';
 import { useCADStore } from '@/stores/cad.store';
 import { CADGenerationRequest } from '@/types/cad.types';
 import { Loader2, Download, History, Sparkles, Settings } from 'lucide-react';
-import CADViewer from '../CADViewer';
+
+// Dynamically import CADViewer to avoid SSR issues with React Three Fiber
+const CADViewer = dynamic(() => import('../CADViewer'), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-[600px] rounded-2xl border-2 border-gray-200 overflow-hidden flex items-center justify-center">
+      <div className="text-gray-500">Loading 3D viewer...</div>
+    </div>
+  ),
+});
 
 export default function ImprovedCADGenerator() {
   const [description, setDescription] = useState('');

@@ -18,6 +18,9 @@ function Model({ stepFileUrl }: { stepFileUrl: string }) {
           geo.center();
           setGeometry(geo);
         });
+      })
+      .catch((error) => {
+        console.error("Error loading STEP file:", error);
       });
   }, [stepFileUrl]);
 
@@ -35,7 +38,21 @@ function Model({ stepFileUrl }: { stepFileUrl: string }) {
 }
 
 export default function CADViewer({ stepFileId }: { stepFileId: string }) {
+  const [mounted, setMounted] = useState(false);
   const stepFileUrl = `${process.env.NEXT_PUBLIC_CONVEX_URL}/api/storage/${stepFileId}`;
+
+  useEffect(() => {
+    // Ensure we're on the client side before rendering Canvas
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="w-full h-[600px] rounded-2xl border-2 border-gray-200 overflow-hidden flex items-center justify-center">
+        <div className="text-gray-500">Loading 3D viewer...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full h-[600px] rounded-2xl border-2 border-gray-200 overflow-hidden">

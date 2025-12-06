@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066CC;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00D4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B46C1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066CC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B46C1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <g transform="translate(512, 512) scale(0.752094453300079, 1) skewX(-5.908846518073249)">
+    <circle cx="0" cy="0" r="358.4" stroke="url(#gradient1)" stroke-width="4" fill="none" filter="url(#shadow)" />
+    <circle cx="0" cy="0" r="153.6" stroke="url(#gradient1)" stroke-width="4" fill="none" />
+    <line x1="-125.32487089426478" y1="105.16005294471785" x2="-266.8898839826519" y2="223.94720321479033" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="-161.11454839279722" y1="28.408841866309793" x2="-343.10702114945326" y2="60.4990250991585" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="-153.7337127605746" y1="-55.95449544807939" x2="-327.3889090818105" y2="-119.15981793466295" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="-105.16005294471785" y1="-125.32487089426478" x2="-223.94720321479033" y2="-266.8898839826519" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="-28.4088418663098" y1="-161.11454839279722" x2="-60.49902509915852" y2="-343.10702114945326" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="55.95449544807931" y1="-153.73371276057463" x2="119.15981793466278" y2="-327.38890908181054" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="125.32487089426476" y1="-105.16005294471788" x2="266.88988398265184" y2="-223.94720321479036" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="161.11454839279722" y1="-28.408841866309956" x2="343.1070211494532" y2="-60.49902509915885" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="153.7337127605746" y1="55.954495448079435" x2="327.3889090818104" y2="119.15981793466305" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="105.16005294471788" y1="125.32487089426476" x2="223.94720321479036" y2="266.88988398265184" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="28.40884186630982" y1="161.11454839279722" x2="60.499025099158565" y2="343.10702114945326" stroke="url(#gradient2)" stroke-width="3" />
+    <line x1="-55.95449544807929" y1="153.73371276057466" x2="-119.15981793466274" y2="327.38890908181054" stroke="url(#gradient2)" stroke-width="3" />
+    <circle cx="-198.88306799763026" cy="-192.0591462645036" r="25.6" stroke="url(#gradient3)" stroke-width="3" fill="rgba(255, 255, 255, 0.9)" />
+    <circle cx="121.20085466424413" cy="-248.4985779207937" r="25.6" stroke="url(#gradient3)" stroke-width="3" fill="rgba(255, 255, 255, 0.9)" />
+    <circle cx="273.78931564566943" cy="38.47857895343864" r="25.6" stroke="url(#gradient3)" stroke-width="3" fill="rgba(255, 255, 255, 0.9)" />
+    <circle cx="48.01024816135293" cy="272.2796475528153" r="25.6" stroke="url(#gradient3)" stroke-width="3" fill="rgba(255, 255, 255, 0.9)" />
+    <circle cx="-244.11735047363612" cy="129.79949767904313" r="25.6" stroke="url(#gradient3)" stroke-width="3" fill="rgba(255, 255, 255, 0.9)" />
+    <circle cx="0" cy="0" r="76.8" stroke="url(#gradient3)" stroke-width="4" fill="rgba(0, 212, 255, 0.08)" />
+    <circle cx="0" cy="0" r="256" stroke="url(#gradient1)" stroke-width="2" fill="none" opacity="0.5" stroke-dasharray="10,5" />
+  </g>
+</svg>

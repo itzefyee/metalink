@@ -92,3 +92,4 @@ export default function ComplianceReport({ generationId }: { generationId: Id<"c
   );
 }
 
+

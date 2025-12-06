@@ -2,7 +2,7 @@
 
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
-import { useMemo } from 'react';
+import { useMemo, useEffect, useState } from 'react';
 import * as THREE from 'three';
 
 interface BlueprintModel3DProps {
@@ -47,6 +47,16 @@ function Model({ modelType = 'gear' }: { modelType: 'gear' | 'shaft' | 'bracket'
 }
 
 export default function BlueprintModel3D({ modelType = 'gear' }: BlueprintModel3DProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div className="w-full h-full" />;
+  }
+
   return (
     <Canvas>
       <PerspectiveCamera makeDefault position={[0, 0, 3]} />

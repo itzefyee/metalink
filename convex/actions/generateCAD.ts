@@ -5,17 +5,24 @@ import { api } from "../_generated/api";
 import { Id } from "../_generated/dataModel";
 import Anthropic from "@anthropic-ai/sdk";
 import { createHash } from "crypto";
+import { ml } from "@kittycad/lib";
 
 /**
  * Enhanced CAD Generation Action
  * Incorporates service layer business logic with Convex backend
- * Provides validation, caching, error handling, and Zoo Dev API integration
+ * Provides validation, caching, and Zoo Dev API integration with polling support
  */
 
+// Polling configuration
+const MAX_POLL_ATTEMPTS = 150; // 5 minutes (150 * 2s)
+const POLL_INTERVAL = 2000; // 2 seconds
+const API_TIMEOUT = 30000; // 30 seconds
+
 /**
- * Validation helper
+ * Validation helper - validates description
+ * Note: Full validation with format/units is done at API route level
  */
-function validateGenerationRequest(description: string): void {
+function validateDescription(description: string): void {
   if (!description || description.trim().length === 0) {
     throw new Error('Description is required');
   }
@@ -23,6 +30,119 @@ function validateGenerationRequest(description: string): void {
   if (description.length > 1000) {
     throw new Error('Description too long (max 1000 characters)');
   }
+}
+
+/**
+ * Poll Zoo Dev API operation until completion using KittyCAD library
+ * Handles async operations that return status: 'queued' or 'processing'
+ */
+async function pollZooDevOperation(
+  operationId: string,
+  format: string
+): Promise<Blob> {
+  for (let attempt = 1; attempt <= MAX_POLL_ATTEMPTS; attempt++) {
+    try {
+      // Check operation status using KittyCAD library
+      const operation = await (ml as any).get_text_to_cad_part_for_user({
+        id: operationId,
+      });
+
+      // Check if completed
+      if (operation.status === 'completed') {
+        // Extract model data from outputs
+        const outputKey = `source.${format}`;
+        
+        if (operation.outputs && operation.outputs[outputKey]) {
+          const output = operation.outputs[outputKey];
+          
+          // Handle different output formats
+          if (typeof output === 'string') {
+            // Base64 encoded string - convert to blob
+            const binaryString = atob(output);
+            const bytes = new Uint8Array(binaryString.length);
+            for (let i = 0; i < binaryString.length; i++) {
+              bytes[i] = binaryString.charCodeAt(i);
+            }
+            return new Blob([bytes], { type: `model/${format}` });
+          } else if (output && typeof output === 'object' && 'content' in output) {
+            // Object with content property
+            const content = (output as any).content;
+            if (typeof content === 'string') {
+              const binaryString = atob(content);
+              const bytes = new Uint8Array(binaryString.length);
+              for (let i = 0; i < binaryString.length; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+              }
+              return new Blob([bytes], { type: `model/${format}` });
+            } else if (content?.url) {
+              // URL to download
+              const fileResponse = await fetch(content.url, {
+                signal: AbortSignal.timeout(API_TIMEOUT),
+              });
+              if (!fileResponse.ok) {
+                throw new Error('Failed to download completed file');
+              }
+              return await fileResponse.blob();
+            }
+          } else if (output?.url) {
+            // Direct URL in output
+            const fileResponse = await fetch(output.url, {
+              signal: AbortSignal.timeout(API_TIMEOUT),
+            });
+            if (!fileResponse.ok) {
+              throw new Error('Failed to download completed file');
+            }
+            return await fileResponse.blob();
+          }
+        } else if (operation.outputs) {
+          // Fallback: try any available output
+          const availableKeys = Object.keys(operation.outputs);
+          for (const key of availableKeys) {
+            const output = operation.outputs[key];
+            if (output && typeof output === 'object' && 'url' in output) {
+              const fileResponse = await fetch((output as any).url, {
+                signal: AbortSignal.timeout(API_TIMEOUT),
+              });
+              if (fileResponse.ok) {
+                return await fileResponse.blob();
+              }
+            }
+          }
+        }
+        
+        throw new Error('Completed operation but no file data found in outputs');
+      }
+
+      // Check if failed
+      if (operation.status === 'failed') {
+        const errorMessage = (operation as any).error || 'Generation failed';
+        throw new Error(errorMessage);
+      }
+
+      // Still in progress (queued or processing), wait and retry
+      if (attempt < MAX_POLL_ATTEMPTS) {
+        await new Promise((resolve) => setTimeout(resolve, POLL_INTERVAL));
+      }
+    } catch (error: any) {
+      // If it's a known error (not network), throw immediately
+      if (error.message && !error.message.includes('fetch') && !error.message.includes('network') && !error.message.includes('timeout')) {
+        throw error;
+      }
+
+      // For network/timeout errors, log and continue
+      console.warn(`Poll attempt ${attempt} encountered error:`, error.message);
+
+      if (attempt === MAX_POLL_ATTEMPTS) {
+        throw new Error(`Polling failed after ${MAX_POLL_ATTEMPTS} attempts: ${error.message}`);
+      }
+
+      await new Promise((resolve) => setTimeout(resolve, POLL_INTERVAL));
+    }
+  }
+
+  throw new Error(
+    `Operation ${operationId} did not complete within ${(MAX_POLL_ATTEMPTS * POLL_INTERVAL) / 1000} seconds`
+  );
 }
 
 export const generateFromDescription = action({
@@ -47,7 +167,7 @@ export const generateFromDescription = action({
   },
   handler: async (ctx, args): Promise<{ generationId: Id<"cadGenerations">; stepFileId: Id<"_storage">; cached?: boolean }> => {
     // Business Logic: Validate input
-    validateGenerationRequest(args.description);
+    validateDescription(args.description);
     
     const userId = args.userId || "anonymous";
     const specifications = args.specifications || {
@@ -62,36 +182,43 @@ export const generateFromDescription = action({
 
     // Check Redis cache for identical previous generations (if Redis is available)
     let cachedResult: any = null;
-    try {
-      const { Redis } = await import("@upstash/redis");
-      const redis = new Redis({
-        url: process.env.UPSTASH_REDIS_REST_URL!,
-        token: process.env.UPSTASH_REDIS_REST_TOKEN!,
-      });
-      
-      cachedResult = await redis.get(`generation:${contentHash}`);
-      if (cachedResult) {
-        console.log("✅ Cache HIT for CAD generation");
-        const parsed = JSON.parse(cachedResult as string);
-        return { ...parsed, cached: true };
-      }
-      console.log("❌ Cache MISS - Generating new CAD");
-      
-      // Business Logic: Check rate limiting
-      const { Ratelimit } = await import("@upstash/ratelimit");
-      const cadGenerationLimiter = new Ratelimit({
-        redis,
-        limiter: Ratelimit.slidingWindow(10, "1 h"),
-        analytics: true,
-        prefix: "ratelimit:cad",
-      });
+    const redisUrl = process.env.UPSTASH_REDIS_REST_URL;
+    const redisToken = process.env.UPSTASH_REDIS_REST_TOKEN;
+    
+    if (redisUrl && redisToken) {
+      try {
+        const { Redis } = await import("@upstash/redis");
+        const redis = new Redis({
+          url: redisUrl,
+          token: redisToken,
+        });
+        
+        cachedResult = await redis.get(`generation:${contentHash}`);
+        if (cachedResult) {
+          console.log("✅ Cache HIT for CAD generation");
+          const parsed = JSON.parse(cachedResult as string);
+          return { ...parsed, cached: true };
+        }
+        console.log("❌ Cache MISS - Generating new CAD");
+        
+        // Business Logic: Check rate limiting
+        const { Ratelimit } = await import("@upstash/ratelimit");
+        const cadGenerationLimiter = new Ratelimit({
+          redis,
+          limiter: Ratelimit.slidingWindow(10, "1 h"),
+          analytics: true,
+          prefix: "ratelimit:cad",
+        });
 
-      const { success, remaining } = await cadGenerationLimiter.limit(userId);
-      if (!success) {
-        throw new Error(`Rate limit exceeded. ${remaining} generations remaining this hour. Please try again later.`);
+        const { success, remaining } = await cadGenerationLimiter.limit(userId);
+        if (!success) {
+          throw new Error(`Rate limit exceeded. ${remaining} generations remaining this hour. Please try again later.`);
+        }
+      } catch (error) {
+        console.log("Redis not available, proceeding without cache");
       }
-    } catch (error) {
-      console.log("Redis not available, proceeding without cache");
+    } else {
+      console.log("Redis not configured, proceeding without cache");
     }
     
     // Step 1: Claude optimizes the prompt for Zoo Dev
@@ -106,7 +233,7 @@ export const generateFromDescription = action({
     const dimensionsStr = JSON.stringify(specifications.dimensions || {});
     
     const optimizedPrompt = await anthropic.messages.create({
-        model: "claude-3-5-sonnet-20240620",
+        model: "claude-sonnet-4-5-20250929",
       max_tokens: 50,
       messages: [{
         role: "user",
@@ -120,56 +247,87 @@ export const generateFromDescription = action({
     }
     const zooPrompt = firstContent.text;
 
-    // Step 2: Call Zoo Dev API
-    const zooApiKey = process.env.ZOO_DEV_API_KEY;
+    // Step 2: Call Zoo Dev API using KittyCAD library
+    // The library uses ZOO_API_TOKEN or ZOO_DEV_API_KEY from environment variables
+    const zooApiKey = process.env.ZOO_DEV_API_KEY || process.env.ZOO_API_TOKEN;
     if (!zooApiKey) {
-      throw new Error("ZOO_DEV_API_KEY environment variable is not set. Please set it in your Convex dashboard under Settings > Environment Variables.");
+      throw new Error("ZOO_DEV_API_KEY or ZOO_API_TOKEN environment variable is not set. Please set it in your Convex dashboard under Settings > Environment Variables.");
     }
     
-    // Step 2: Call Zoo Dev API (or alternative CAD generation service)
-    // Note: If Zoo Dev API is not available, you may need to:
-    // 1. Use an alternative CAD generation service
-    // 2. Implement your own CAD generation using OpenCascade.js
-    // 3. Use a different API endpoint
+    // Initialize KittyCAD library with API key
+    // Note: The library may use environment variables automatically, but we ensure it's set
+    if (!process.env.ZOO_API_TOKEN && zooApiKey) {
+      // Set it for the library if not already set
+      process.env.ZOO_API_TOKEN = zooApiKey;
+    }
     
-    // Try the Zoo Dev API endpoint
     let stepFileBlob: Blob;
+    const format = (args.format || "step") as "step" | "stl" | "obj" | "gltf" | "glb";
+    
     try {
-      const zooResponse = await fetch("https://api.zoo.dev/cad/generate", {
-        method: "POST",
-        headers: {
-          "Authorization": `Bearer ${zooApiKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
+      // Call Zoo Dev API using KittyCAD library
+      const result = await ml.create_text_to_cad({
+        body: {
           prompt: zooPrompt,
-          format: "step", // Request STEP file
-          units: "inches",
-        }),
-      });
+        },
+        output_format: format,
+      } as any);
 
-      if (!zooResponse.ok) {
-        const errorText = await zooResponse.text();
-        
-        if (zooResponse.status === 404) {
-          throw new Error(
-            `Zoo Dev API endpoint not found (404). The API may have changed or the endpoint URL is incorrect.\n` +
-            `Error details: ${errorText}\n\n` +
-            `Possible solutions:\n` +
-            `1. Check Zoo Dev API documentation for the correct endpoint\n` +
-            `2. Verify your API key has access to CAD generation endpoints\n` +
-            `3. Consider using an alternative CAD generation service\n` +
-            `4. Implement a fallback using OpenCascade.js for basic shapes`
-          );
-        }
-        
-        throw new Error(`Zoo Dev API failed with status ${zooResponse.status}: ${errorText}`);
+      // Check for API errors
+      if ('error_code' in result) {
+        throw new Error(`CAD generation failed: ${(result as any).message || 'Unknown error'}`);
       }
 
-      stepFileBlob = await zooResponse.blob();
-    } catch (error) {
-      // If Zoo Dev fails, you could implement a fallback here
-      // For now, we'll re-throw with a helpful message
+      // Check if async operation (needs polling) or completed
+      if (result && 'status' in result && result.status !== 'completed' && result.id) {
+        // Async operation - poll until completion
+        console.log(`Starting polling for operation ${result.id}, status: ${result.status}`);
+        stepFileBlob = await pollZooDevOperation(result.id, format);
+      } else if (result && 'status' in result && result.status === 'completed') {
+        // Already completed, extract model data
+        const outputKey = `source.${format}`;
+        
+        if (result.outputs && result.outputs[outputKey]) {
+          const output = result.outputs[outputKey];
+          
+          // Handle different output formats
+          if (typeof output === 'string') {
+            // Base64 encoded string - convert to blob
+            const binaryString = atob(output);
+            const bytes = new Uint8Array(binaryString.length);
+            for (let i = 0; i < binaryString.length; i++) {
+              bytes[i] = binaryString.charCodeAt(i);
+            }
+            stepFileBlob = new Blob([bytes], { type: `model/${format}` });
+          } else if (output && typeof output === 'object' && 'content' in output) {
+            const content = (output as any).content;
+            if (typeof content === 'string') {
+              const binaryString = atob(content);
+              const bytes = new Uint8Array(binaryString.length);
+              for (let i = 0; i < binaryString.length; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+              }
+              stepFileBlob = new Blob([bytes], { type: `model/${format}` });
+            } else if (content && typeof content === 'object' && 'url' in content) {
+              const fileResponse = await fetch((content as any).url);
+              stepFileBlob = await fileResponse.blob();
+            } else {
+              throw new Error('Completed operation but no file data found in outputs');
+            }
+          } else if (output && typeof output === 'object' && 'url' in output) {
+            const fileResponse = await fetch((output as any).url);
+            stepFileBlob = await fileResponse.blob();
+          } else {
+            throw new Error('Completed operation but no file data found in outputs');
+          }
+        } else {
+          throw new Error('No model data received from Zoo Dev API');
+        }
+      } else {
+        throw new Error(`Unexpected response format from Zoo Dev API: ${JSON.stringify(result)}`);
+      }
+    } catch (error: any) {
+      // Re-throw with helpful message
       if (error instanceof Error) {
         throw new Error(`CAD generation failed: ${error.message}`);
       }
@@ -197,25 +355,27 @@ export const generateFromDescription = action({
     const result = { generationId, stepFileId, cached: false };
 
     // Cache the result for 1 hour (if Redis is available)
-    try {
-      const { Redis } = await import("@upstash/redis");
-      const redis = new Redis({
-        url: process.env.UPSTASH_REDIS_REST_URL!,
-        token: process.env.UPSTASH_REDIS_REST_TOKEN!,
-      });
-      
-      await redis.setex(
-        `generation:${contentHash}`,
-        3600,
-        JSON.stringify(result)
-      );
+    if (redisUrl && redisToken) {
+      try {
+        const { Redis } = await import("@upstash/redis");
+        const redis = new Redis({
+          url: redisUrl,
+          token: redisToken,
+        });
+        
+        await redis.setex(
+          `generation:${contentHash}`,
+          3600,
+          JSON.stringify(result)
+        );
 
-      // Track API usage
-      const key = `usage:${userId}:zoo_dev:${new Date().toISOString().split('T')[0]}`;
-      await redis.incr(key);
-      await redis.expire(key, 86400 * 30);
-    } catch (error) {
-      console.log("Redis not available, skipping cache");
+        // Track API usage
+        const key = `usage:${userId}:zoo_dev:${new Date().toISOString().split('T')[0]}`;
+        await redis.incr(key);
+        await redis.expire(key, 86400 * 30);
+      } catch (error) {
+        console.log("Redis not available, skipping cache");
+      }
     }
 
     return result;
