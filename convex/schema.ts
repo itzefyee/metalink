@@ -5,21 +5,13 @@ export default defineSchema({
   cadGenerations: defineTable({
     userId: v.optional(v.string()),
     description: v.string(),
-    specifications: v.object({
-      dimensions: v.object({
-        length: v.number(),
-        width: v.number(),
-        height: v.number(),
-        thickness: v.number(),
-      }),
-      material: v.object({
-        grade: v.string(),
-        edgeType: v.string(),
-      }),
-    }),
+    specifications: v.any(), // Flexible for different spec structures
     stepFileId: v.optional(v.id("_storage")), // Convex file storage
     complianceScore: v.optional(v.number()),
     status: v.string(), // "generating" | "completed" | "failed"
+    category: v.optional(v.string()),
+    format: v.optional(v.string()),
+    units: v.optional(v.string()),
     createdAt: v.number(),
   }).index("by_user", ["userId"]),
 

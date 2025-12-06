@@ -30,3 +30,25 @@ export const getChatSession = query({
   },
 });
 
+export const listGenerations = query({
+  args: {
+    limit: v.optional(v.number()),
+  },
+  handler: async (ctx, args) => {
+    const limit = args.limit || 50;
+    return await ctx.db
+      .query("cadGenerations")
+      .order("desc")
+      .take(limit);
+  },
+});
+
+export const getFileUrl = query({
+  args: {
+    storageId: v.id("_storage"),
+  },
+  handler: async (ctx, args) => {
+    return await ctx.storage.getUrl(args.storageId);
+  },
+});
+

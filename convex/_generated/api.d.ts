@@ -12,6 +12,7 @@ import type * as actions_aiAnalysis from "../actions/aiAnalysis.js";
 import type * as actions_chat from "../actions/chat.js";
 import type * as actions_generateCAD from "../actions/generateCAD.js";
 import type * as actions_parseSTEP from "../actions/parseSTEP.js";
+import type * as actions_validateCompliance from "../actions/validateCompliance.js";
 import type * as mcp_config from "../mcp/config.js";
 import type * as mutations from "../mutations.js";
 import type * as queries from "../queries.js";
@@ -29,6 +30,7 @@ declare const fullApi: ApiFromModules<{
   "actions/chat": typeof actions_chat;
   "actions/generateCAD": typeof actions_generateCAD;
   "actions/parseSTEP": typeof actions_parseSTEP;
+  "actions/validateCompliance": typeof actions_validateCompliance;
   "mcp/config": typeof mcp_config;
   mutations: typeof mutations;
   queries: typeof queries;

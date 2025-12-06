@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ConvexClientProvider from "@/components/ConvexClientProvider";
 import Chatbot from "@/components/Chatbot";
+import { QueryProvider } from "@/providers/QueryProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,10 +27,12 @@ export default function RootLayout({
         className={`${inter.variable} font-sans antialiased`}
         suppressHydrationWarning
       >
-        <ConvexClientProvider>
-          {children}
-          <Chatbot />
-        </ConvexClientProvider>
+        <QueryProvider>
+          <ConvexClientProvider>
+            {children}
+            <Chatbot />
+          </ConvexClientProvider>
+        </QueryProvider>
       </body>
     </html>
   );

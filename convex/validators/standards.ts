@@ -25,6 +25,9 @@ export const validateCompliance = query({
     specifications: v.any(),
   },
   handler: async (ctx, args) => {
+    // Note: Caching moved to action layer since queries can't use crypto
+    // This query now just performs validation without caching
+
     const violations: any[] = [];
     const warnings: any[] = [];
     const passes: any[] = [];
@@ -129,7 +132,7 @@ export const validateCompliance = query({
     if (criticalCount > 0) status = "NON_COMPLIANT";
     else if (score < 90) status = "ACCEPTABLE_WITH_NOTES";
 
-    return {
+    const results = {
       overallScore: score,
       status,
       violations,
@@ -142,6 +145,8 @@ export const validateCompliance = query({
         checksPerformed: passes.length + violations.length + warnings.length,
       },
     };
+
+    return results;
   },
 });
 

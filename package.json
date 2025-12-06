@@ -12,6 +12,9 @@
     "@anthropic-ai/sdk": "^0.71.2",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.2",
+    "@tanstack/react-query": "^5.90.12",
+    "@upstash/ratelimit": "^2.0.7",
+    "@upstash/redis": "^1.35.7",
     "convex": "^1.30.0",
     "framer-motion": "^12.23.25",
     "lucide-react": "^0.556.0",
@@ -19,7 +22,8 @@
     "opencascade.js": "^1.1.1",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "three": "^0.181.2"
+    "three": "^0.181.2",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

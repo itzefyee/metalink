@@ -4,21 +4,13 @@ import { v } from "convex/values";
 export const createGeneration = mutation({
   args: {
     description: v.string(),
-    specifications: v.object({
-      dimensions: v.object({
-        length: v.number(),
-        width: v.number(),
-        height: v.number(),
-        thickness: v.number(),
-      }),
-      material: v.object({
-        grade: v.string(),
-        edgeType: v.string(),
-      }),
-    }),
+    specifications: v.any(),
     stepFileId: v.optional(v.id("_storage")),
     status: v.string(),
     userId: v.optional(v.string()),
+    category: v.optional(v.string()),
+    format: v.optional(v.string()),
+    units: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const generationId = await ctx.db.insert("cadGenerations", {
@@ -27,6 +19,9 @@ export const createGeneration = mutation({
       stepFileId: args.stepFileId,
       status: args.status,
       userId: args.userId,
+      category: args.category,
+      format: args.format,
+      units: args.units,
       createdAt: Date.now(),
     });
     return generationId;

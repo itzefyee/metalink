@@ -3,9 +3,25 @@ import { useState } from "react";
 import { useAction, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 
-export default function Chatbot({ userId = "anonymous" }: { userId?: string }) {
+export default function Chatbot({ userId: userIdProp }: { userId?: string } = {}) {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
+  
+  // Generate a persistent user ID
+  const [userId, setUserId] = useState<string>("anonymous");
+  
+  useState(() => {
+    if (typeof window !== 'undefined') {
+      const storedId = localStorage.getItem('metalink_user_id');
+      if (storedId) {
+        setUserId(storedId);
+      } else {
+        const newId = userIdProp || `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        localStorage.setItem('metalink_user_id', newId);
+        setUserId(newId);
+      }
+    }
+  });
 
   const sendMessage = useAction(api.actions.chat.sendMessage);
   const session = useQuery(api.queries.getChatSession, {
