@@ -1,0 +1,858 @@
+[
+  {
+    "id": "brake-rotor-001",
+    "name": "Brake Rotor 320mm Vented 5x114.3",
+    "category": "structural",
+    "material": "High Carbon Cast Iron",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "9.2 kg per rotor",
+      "tolerance": "Face runout ≤ 0.03 mm",
+      "dimensions": "Ø320 mm x 32 mm vented rotor",
+      "loadCapacity": "Clamp load up to 45 kN",
+      "operatingTemp": "Up to 650°C continuous"
+    },
+    "price": 215,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/iso-front-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/brake_rotor/right.png"
+    ],
+    "description": "320 mm vented brake rotor with 5x114.3 bolt pattern and machined M12 stud bores for motorsport-grade stopping power.",
+    "technicalDetails": "Vented twin-disc construction, 5x M12 bolt holes on 114.3 mm PCD, dynamically balanced, heat-treated to 650°C.",
+    "compatibleWith": [
+      "hex-bolt-m12",
+      "hex-nut-m12",
+      "washer-m12"
+    ],
+    "inStock": true,
+    "leadTime": "4-6 business days",
+    "createdAt": "2025-11-21T10:12:40.407079+00:00",
+    "updatedAt": "2025-11-22T13:31:46.676794+00:00"
+  },
+  {
+    "id": "connection-bracket-001",
+    "name": "Steel Beam Connection Bracket",
+    "category": "custom",
+    "material": "Grade S355 Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "0.75 kg",
+      "tolerance": "±0.5mm",
+      "dimensions": "120mm x 80mm x 10mm",
+      "loadCapacity": "50 kN shear load",
+      "operatingTemp": "-40°C to +200°C"
+    },
+    "price": 18.95,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/i-beam-steel-200mm-grade/right.png"
+    ],
+    "description": "Heavy-duty bracket for connecting steel beams and structural members.",
+    "technicalDetails": "Laser cut, formed steel, galvanized finish, pre-drilled holes for M12 bolts",
+    "compatibleWith": [
+      "steel-beam-001",
+      "steel-angle-001",
+      "hex-bolt-m12"
+    ],
+    "inStock": true,
+    "leadTime": "1-2 business days",
+    "createdAt": "2025-11-17T03:10:39.283661+00:00",
+    "updatedAt": "2025-11-20T15:06:37.009875+00:00"
+  },
+  {
+    "id": "coupling-002",
+    "name": "Flexible Shaft Coupling 8mm-12mm",
+    "category": "robotic",
+    "material": "Aluminum Alloy",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "0.15 kg",
+      "tolerance": "±0.02mm bore",
+      "dimensions": "30mm x 25mm diameter",
+      "loadCapacity": "50 Nm max torque",
+      "operatingTemp": "-20°C to +80°C"
+    },
+    "price": 28.75,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flexible-shaft-30mm-aluminum/right.png"
+    ],
+    "description": "Flexible coupling for connecting servo motors to driven shafts with misalignment compensation.",
+    "technicalDetails": "Zero backlash design, keyway available, corrosion resistant anodized finish",
+    "compatibleWith": [
+      "servo-motor-001",
+      "servo-motor-002",
+      "linear-actuator-001"
+    ],
+    "inStock": true,
+    "leadTime": "1-2 business days",
+    "createdAt": "2025-11-17T03:10:39.283661+00:00",
+    "updatedAt": "2025-11-21T07:42:03.757734+00:00"
+  },
+  {
+    "id": "custom-bracket-001",
+    "name": "Custom Aluminum Mounting Bracket",
+    "category": "custom",
+    "material": "6061-T6 Aluminum",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "Varies",
+      "tolerance": "±0.1mm",
+      "dimensions": "Custom sized",
+      "loadCapacity": "Variable based on design",
+      "operatingTemp": "-50°C to +120°C"
+    },
+    "price": 45,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/custom-aluminum-6061-t6/right.png"
+    ],
+    "description": "Precision machined aluminum bracket customized to your specifications.",
+    "technicalDetails": "CNC machined, anodized finish, custom drilling patterns available",
+    "compatibleWith": [
+      "servo-motor-001",
+      "linear-actuator-001"
+    ],
+    "inStock": false,
+    "leadTime": "7-10 business days",
+    "createdAt": "2025-11-17T03:10:39.121284+00:00",
+    "updatedAt": "2025-11-20T15:06:35.971902+00:00"
+  },
+  {
+    "id": "encoder-001",
+    "name": "Rotary Encoder 1024 PPR",
+    "category": "robotic",
+    "material": "Aluminum Housing",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "0.25 kg",
+      "tolerance": "±0.1° accuracy",
+      "dimensions": "58mm diameter x 35mm",
+      "loadCapacity": "1024 pulses per revolution",
+      "operatingTemp": "-10°C to +70°C"
+    },
+    "price": 145,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/rotary-encoder-58mm-aluminum/right.png"
+    ],
+    "description": "High-resolution incremental rotary encoder for precise position feedback.",
+    "technicalDetails": "TTL/HTL output, IP54 protection, 6mm shaft, differential line driver",
+    "compatibleWith": [
+      "servo-motor-001",
+      "servo-motor-002",
+      "coupling-002"
+    ],
+    "inStock": true,
+    "leadTime": "2-3 business days",
+    "createdAt": "2025-11-17T03:10:39.283661+00:00",
+    "updatedAt": "2025-11-20T15:06:36.603325+00:00"
+  },
+  {
+    "id": "gallows-frame-001",
+    "name": "Gallows Frame 2400 x 1250 x 450 mm",
+    "category": "structural",
+    "material": "Hot Dip Galvanized Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "180 kg assembled",
+      "tolerance": "Frame squareness ±2 mm",
+      "dimensions": "2400 x 1250 x 450 mm envelope",
+      "loadCapacity": "Safe working load 8 kN",
+      "operatingTemp": "-20°C to +80°C"
+    },
+    "price": 1420,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/iso-front-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/gallows_frame/right.png"
+    ],
+    "description": "Heavy-duty gallows frame built from angle iron with six integrated brackets for modular lifting systems.",
+    "technicalDetails": "Angle iron construction, 6 removable brackets, pre-drilled for M12 hardware, supplied with leveling feet.",
+    "compatibleWith": [
+      "steel-beam-001",
+      "steel-angle-001",
+      "connection-bracket-001"
+    ],
+    "inStock": false,
+    "leadTime": "10-12 business days",
+    "createdAt": "2025-11-21T10:11:49.335607+00:00",
+    "updatedAt": "2025-11-22T13:32:57.964868+00:00"
+  },
+  {
+    "id": "hex-bolt-m12",
+    "name": "Hex Bolt M12x80 Grade 8.8",
+    "category": "fasteners",
+    "material": "Alloy Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "0.095 kg",
+      "tolerance": "6g thread tolerance",
+      "dimensions": "M12 x 80mm",
+      "loadCapacity": "800 MPa tensile strength",
+      "operatingTemp": "-40°C to +150°C"
+    },
+    "price": 2.45,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-bolt-12mm-alloy/right.png"
+    ],
+    "description": "High-strength hex bolt for critical structural connections.",
+    "technicalDetails": "Zinc plated, ISO 4017 standard, torque specification included",
+    "compatibleWith": [
+      "hex-nut-m12",
+      "washer-m12",
+      "steel-beam-001"
+    ],
+    "inStock": true,
+    "leadTime": "Same day",
+    "createdAt": "2025-11-17T03:10:39.121284+00:00",
+    "updatedAt": "2025-11-20T14:47:01.432952+00:00"
+  },
+  {
+    "id": "hex-nut-m12",
+    "name": "Hex Nut M12 Grade 8",
+    "category": "fasteners",
+    "material": "Alloy Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "0.015 kg",
+      "tolerance": "6H thread tolerance",
+      "dimensions": "M12 thread",
+      "loadCapacity": "800 MPa proof load",
+      "operatingTemp": "-40°C to +150°C"
+    },
+    "price": 0.85,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/hex-nut-12mm-alloy/right.png"
+    ],
+    "description": "Matching hex nut for M12 bolts with high strength rating.",
+    "technicalDetails": "Zinc plated, ISO 4032 standard, compatible with grade 8.8 bolts",
+    "compatibleWith": [
+      "hex-bolt-m12",
+      "washer-m12"
+    ],
+    "inStock": true,
+    "leadTime": "Same day",
+    "createdAt": "2025-11-17T03:10:39.121284+00:00",
+    "updatedAt": "2025-11-20T14:47:01.793501+00:00"
+  },
+  {
+    "id": "linear-actuator-001",
+    "name": "Electric Linear Actuator - 1000N",
+    "category": "robotic",
+    "material": "Stainless Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "1.8 kg",
+      "tolerance": "±0.1mm",
+      "dimensions": "300mm x 50mm x 50mm",
+      "loadCapacity": "1000N push/pull",
+      "operatingTemp": "-40°C to +85°C"
+    },
+    "price": 189.5,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/electric-linear-300mm-ss/right.png"
+    ],
+    "description": "High-force electric linear actuator with precise position control.",
+    "technicalDetails": "12V/24V operation, built-in position feedback, IP67 protection",
+    "compatibleWith": [
+      "mounting-bracket-002",
+      "position-sensor-001"
+    ],
+    "inStock": true,
+    "leadTime": "1-2 business days",
+    "createdAt": "2025-11-17T03:10:39.121284+00:00",
+    "updatedAt": "2025-11-20T14:46:59.188737+00:00"
+  },
+  {
+    "id": "mounting-bracket-001",
+    "name": "Universal Servo Motor Mount",
+    "category": "custom",
+    "material": "Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "0.8 kg",
+      "tolerance": "±0.1mm",
+      "dimensions": "140mm x 90mm x 20mm",
+      "loadCapacity": "500N static load",
+      "operatingTemp": "-40°C to +100°C"
+    },
+    "price": 35.5,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/universal-servo-140mm-steel/right.png"
+    ],
+    "description": "Universal mounting bracket compatible with most servo motors up to 100Nm.",
+    "technicalDetails": "Powder coated steel, multiple mounting holes, vibration dampening pads included",
+    "compatibleWith": [
+      "servo-motor-001",
+      "servo-motor-002",
+      "servo-motor-003"
+    ],
+    "inStock": true,
+    "leadTime": "Same day",
+    "createdAt": "2025-11-17T03:10:39.283661+00:00",
+    "updatedAt": "2025-11-20T15:06:38.095765+00:00"
+  },
+  {
+    "id": "pressure-sensor-001",
+    "name": "Industrial Pressure Sensor 0-100 Bar",
+    "category": "robotic",
+    "material": "Stainless Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "0.12 kg",
+      "tolerance": "±0.25% FS",
+      "dimensions": "50mm x 25mm x 15mm",
+      "loadCapacity": "100 bar maximum",
+      "operatingTemp": "-40°C to +125°C"
+    },
+    "price": 89.95,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/industrial-pressure-50mm-ss/right.png"
+    ],
+    "description": "High-accuracy pressure sensor for industrial automation and control systems.",
+    "technicalDetails": "4-20mA output, M12 connector, IP67 rated, CE certified",
+    "compatibleWith": [
+      "linear-actuator-001",
+      "control-module-001"
+    ],
+    "inStock": true,
+    "leadTime": "3-5 business days",
+    "createdAt": "2025-11-17T03:10:39.121284+00:00",
+    "updatedAt": "2025-11-20T14:47:04.434401+00:00"
+  },
+  {
+    "id": "servo-motor-001",
+    "name": "High-Torque Servo Motor - 50Nm",
+    "category": "robotic",
+    "material": "Aluminum Housing",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "2.1 kg",
+      "tolerance": "±0.02mm",
+      "dimensions": "120mm x 80mm x 65mm",
+      "loadCapacity": "50 Nm continuous torque",
+      "operatingTemp": "-20°C to +80°C"
+    },
+    "price": 245.99,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/high-torque-servo-120mm-aluminum/right.png"
+    ],
+    "description": "Precision servo motor ideal for robotic applications requiring high torque and accuracy.",
+    "technicalDetails": "Integrated encoder, 24V DC operation, IP65 rating, CAN bus communication",
+    "compatibleWith": [
+      "mounting-bracket-001",
+      "coupling-002",
+      "encoder-001"
+    ],
+    "inStock": true,
+    "leadTime": "2-3 business days",
+    "createdAt": "2025-11-17T03:10:39.121284+00:00",
+    "updatedAt": "2025-11-20T14:46:57.94059+00:00"
+  },
+  {
+    "id": "servo-motor-002",
+    "name": "Compact Servo Motor - 25Nm",
+    "category": "robotic",
+    "material": "Aluminum Housing",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "1.4 kg",
+      "tolerance": "±0.01mm",
+      "dimensions": "90mm x 60mm x 50mm",
+      "loadCapacity": "25 Nm continuous torque",
+      "operatingTemp": "-10°C to +70°C"
+    },
+    "price": 189.99,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/heavy-duty-servo-150mm-cast/right.png"
+    ],
+    "description": "Compact servo motor perfect for smaller robotic applications and automation systems.",
+    "technicalDetails": "Integrated encoder, 12V DC operation, IP54 rating, RS485 communication",
+    "compatibleWith": [
+      "mounting-bracket-001",
+      "coupling-001",
+      "encoder-002"
+    ],
+    "inStock": true,
+    "leadTime": "1-2 business days",
+    "createdAt": "2025-11-17T03:10:39.121284+00:00",
+    "updatedAt": "2025-11-20T14:46:58.465628+00:00"
+  },
+  {
+    "id": "servo-motor-003",
+    "name": "Heavy-Duty Servo Motor - 100Nm",
+    "category": "robotic",
+    "material": "Cast Iron Housing",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "3.8 kg",
+      "tolerance": "±0.03mm",
+      "dimensions": "150mm x 100mm x 80mm",
+      "loadCapacity": "100 Nm continuous torque",
+      "operatingTemp": "-30°C to +90°C"
+    },
+    "price": 425,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/compact-servo-90mm-aluminum/right.png"
+    ],
+    "description": "Industrial-grade servo motor for heavy-duty applications requiring high torque output.",
+    "technicalDetails": "Integrated encoder, 48V DC operation, IP65 rating, EtherCAT communication",
+    "compatibleWith": [
+      "mounting-bracket-003",
+      "coupling-003",
+      "gearbox-001"
+    ],
+    "inStock": true,
+    "leadTime": "3-4 business days",
+    "createdAt": "2025-11-17T03:10:39.121284+00:00",
+    "updatedAt": "2025-11-20T14:46:58.822315+00:00"
+  },
+  {
+    "id": "socket-head-m8",
+    "name": "Socket Head Cap Screw M8x40",
+    "category": "fasteners",
+    "material": "Alloy Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "0.032 kg",
+      "tolerance": "6g thread tolerance",
+      "dimensions": "M8 x 40mm",
+      "loadCapacity": "1040 MPa tensile strength",
+      "operatingTemp": "-40°C to +150°C"
+    },
+    "price": 1.25,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/socket-head-8mm-alloy/right.png"
+    ],
+    "description": "High-strength socket head cap screw for precision applications.",
+    "technicalDetails": "Black oxide finish, ISO 4762 standard, allen key drive",
+    "compatibleWith": [
+      "mounting-bracket-001",
+      "connection-bracket-001"
+    ],
+    "inStock": true,
+    "leadTime": "Same day",
+    "createdAt": "2025-11-17T03:10:39.283661+00:00",
+    "updatedAt": "2025-11-20T14:47:02.523375+00:00"
+  },
+  {
+    "id": "steel-angle-001",
+    "name": "Steel Angle Iron 50x50x5mm",
+    "category": "structural",
+    "material": "Grade S275 Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "14.6 kg/m",
+      "tolerance": "±1mm",
+      "dimensions": "50mm x 50mm x 5mm x 6m length",
+      "loadCapacity": "275 MPa yield strength",
+      "operatingTemp": "-40°C to +200°C"
+    },
+    "price": 24.8,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/right.png"
+    ],
+    "description": "Equal angle steel for structural framing and support applications.",
+    "technicalDetails": "Hot-rolled steel, mill finish, can be galvanized or painted to specification",
+    "compatibleWith": [
+      "steel-beam-001",
+      "connection-bracket-002",
+      "hex-bolt-m12"
+    ],
+    "inStock": true,
+    "leadTime": "2-3 business days",
+    "createdAt": "2025-11-17T03:10:39.283661+00:00",
+    "updatedAt": "2025-11-20T14:47:01.070286+00:00"
+  },
+  {
+    "id": "steel-beam-001",
+    "name": "I-Beam Steel 200x100mm",
+    "category": "structural",
+    "material": "Grade S355 Structural Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "89.4 kg/m",
+      "tolerance": "±0.5 mm rolled tolerance",
+      "dimensions": "Length 12 in • Height 4 in • Flange 2.66 in",
+      "loadCapacity": "120 kN/m² design load",
+      "operatingTemp": "-40°C to +200°C"
+    },
+    "price": 156.75,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-beam-001/right.png"
+    ],
+    "description": "Standard S355 structural I-beam with 12\" length, 4\" web height, and optimized flange thickness for medium span frames.",
+    "technicalDetails": "Hot rolled, stress relieved, 0.29\" flange thickness, 0.19\" web thickness, 0.46\" root radius, shot blasted & primed.",
+    "compatibleWith": [
+      "connection-bracket-001",
+      "steel-plate-001",
+      "hex-bolt-m12"
+    ],
+    "inStock": true,
+    "leadTime": "5-7 business days",
+    "createdAt": "2025-11-17T03:10:39.121284+00:00",
+    "updatedAt": "2025-11-21T10:28:24.413697+00:00"
+  },
+  {
+    "id": "steel-channel-001",
+    "name": "Steel Channel 100x50x6mm",
+    "category": "structural",
+    "material": "Grade S355 Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "26.1 kg/m",
+      "tolerance": "±1.5mm",
+      "dimensions": "100mm x 50mm x 6mm x 6m length",
+      "loadCapacity": "355 MPa yield strength",
+      "operatingTemp": "-40°C to +200°C"
+    },
+    "price": 45.2,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-angle-50mm-grade/right.png"
+    ],
+    "description": "U-channel steel beam for structural support and framework construction.",
+    "technicalDetails": "Hot-rolled steel, EN 10025-2 compliant, custom lengths available",
+    "compatibleWith": [
+      "steel-beam-001",
+      "steel-angle-001",
+      "connection-bracket-001"
+    ],
+    "inStock": true,
+    "leadTime": "3-5 business days",
+    "createdAt": "2025-11-17T03:10:39.283661+00:00",
+    "updatedAt": "2025-11-20T15:06:37.702634+00:00"
+  },
+  {
+    "id": "steel-plate-001",
+    "name": "Steel Plate 10mm Thickness",
+    "category": "structural",
+    "material": "Grade S235 Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "157 kg",
+      "tolerance": "±0.5mm thickness",
+      "dimensions": "2000mm x 1000mm x 10mm",
+      "loadCapacity": "235 MPa yield strength",
+      "operatingTemp": "-20°C to +150°C"
+    },
+    "price": 298.4,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/steel-plate-2000mm-grade/right.png"
+    ],
+    "description": "High-quality steel plate suitable for fabrication and structural work.",
+    "technicalDetails": "Hot-rolled, pickled and oiled surface, cut to size available",
+    "compatibleWith": [
+      "steel-beam-001",
+      "welding-rod-001"
+    ],
+    "inStock": false,
+    "leadTime": "10-14 business days",
+    "createdAt": "2025-11-17T03:10:39.121284+00:00",
+    "updatedAt": "2025-11-20T14:47:00.659805+00:00"
+  },
+  {
+    "id": "surgical-drill-guide-001",
+    "name": "Surgical Drill Guide 150mm Handle",
+    "category": "custom",
+    "material": "Surgical Grade Stainless Steel",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "0.45 kg assembly",
+      "tolerance": "Sleeve runout ±0.02 mm",
+      "dimensions": "150 mm handle • Twin Ø2 / Ø3.2 mm sleeves",
+      "loadCapacity": "Manual surgical guidance",
+      "operatingTemp": "Autoclave safe to 134°C"
+    },
+    "price": 495,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/iso-front-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/surgical_drill_guide/right.png"
+    ],
+    "description": "Precision surgical drill guide featuring twin rotating bit mounts for Ø2 mm and Ø3.2 mm instrumentation.",
+    "technicalDetails": "150 mm ergonomic handle, autoclavable to 134°C, twin bit carriers with locking sleeves, laser-etched depth markings.",
+    "compatibleWith": [
+      "custom-bracket-001",
+      "mounting-bracket-001"
+    ],
+    "inStock": true,
+    "leadTime": "7-9 business days",
+    "createdAt": "2025-11-21T10:12:39.627982+00:00",
+    "updatedAt": "2025-11-22T13:33:45.647945+00:00"
+  },
+  {
+    "id": "washer-m12",
+    "name": "Flat Washer M12 DIN 125",
+    "category": "fasteners",
+    "material": "Stainless Steel A2",
+    "materialFamily": null,
+    "componentTypeId": null,
+    "specifications": {
+      "weight": "0.008 kg",
+      "tolerance": "±0.1mm thickness",
+      "dimensions": "M12 x 24mm OD x 2.5mm thick",
+      "loadCapacity": "Grade A2 stainless",
+      "operatingTemp": "-200°C to +400°C"
+    },
+    "price": 0.45,
+    "images": [
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/preview.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/iso-front-top-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/iso-front-bottom-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/iso-front-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/iso-back-top-right.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/iso-back-bottom-left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/front.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/back.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/top.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/bottom.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/left.png",
+      "https://emgzohbqnkfxgzfvphzc.supabase.co/storage/v1/object/public/product-images/products/flat-washer-12mm-stainless/right.png"
+    ],
+    "description": "Stainless steel flat washer for M12 bolt applications.",
+    "technicalDetails": "DIN 125 standard, corrosion resistant, suitable for outdoor use",
+    "compatibleWith": [
+      "hex-bolt-m12",
+      "hex-nut-m12"
+    ],
+    "inStock": true,
+    "leadTime": "Same day",
+    "createdAt": "2025-11-17T03:10:39.283661+00:00",
+    "updatedAt": "2025-11-20T14:47:02.17525+00:00"
+  }
+]

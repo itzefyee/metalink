@@ -1,0 +1,3 @@
+# This directory will contain exported JSON files from Supabase
+# The actual JSON files are gitignored, but this directory is kept in git
+

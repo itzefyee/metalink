@@ -5,23 +5,23 @@ interface MetalinkLogoProps {
   className?: string;
   showText?: boolean;
   size?: 'sm' | 'md' | 'lg';
+  iconOnly?: boolean;
 }
 
 const MetalinkLogo: React.FC<MetalinkLogoProps> = ({ 
   variant = 'default', 
   className = '',
   showText = true,
-  size = 'md'
+  size = 'md',
+  iconOnly = false
 }) => {
   const isWhite = variant === 'white';
-  const iconColor = isWhite ? '#FFFFFF' : '#2563EB';
-  const textColor = isWhite ? '#FFFFFF' : '#1F2937';
   
   // Size mappings
   const sizeMap = {
-    sm: { icon: 32, text: 'text-lg' },
-    md: { icon: 44, text: 'text-xl' },
-    lg: { icon: 56, text: 'text-2xl' }
+    sm: { icon: 32, text: 'text-lg', iconText: 'text-sm' },
+    md: { icon: 44, text: 'text-xl', iconText: 'text-base' },
+    lg: { icon: 56, text: 'text-2xl', iconText: 'text-lg' }
   };
   
   const currentSize = sizeMap[size];
@@ -29,7 +29,7 @@ const MetalinkLogo: React.FC<MetalinkLogoProps> = ({
 
   return (
     <div className={`flex items-center space-x-2.5 ${className}`}>
-      {/* Logo Icon */}
+      {/* Logo Icon with M */}
       <svg
         width={iconSize}
         height={iconSize}
@@ -66,83 +66,61 @@ const MetalinkLogo: React.FC<MetalinkLogoProps> = ({
           filter="url(#metalinkShadow)"
         />
         
-        {/* Link/Chain Icon - Modern connected links design */}
+        {/* Bold Modern "M" Letter */}
         <g transform="translate(22, 22)">
-          {/* Left Link Ring */}
-          <ellipse
-            cx="-6"
-            cy="-2"
-            rx="4.5"
-            ry="3.5"
-            fill="none"
-            stroke="#FFFFFF"
-            strokeWidth="2.2"
-            strokeLinecap="round"
-            opacity="0.95"
-          />
+          {/* Left vertical stroke */}
           <path
-            d="M -6 -5.5 L -6 -8.5"
+            d="M -7 -8 L -7 6"
             stroke="#FFFFFF"
-            strokeWidth="2.2"
+            strokeWidth="3"
             strokeLinecap="round"
-            opacity="0.95"
+            strokeLinejoin="round"
+            fill="none"
           />
           
-          {/* Right Link Ring */}
-          <ellipse
-            cx="6"
-            cy="-2"
-            rx="4.5"
-            ry="3.5"
-            fill="none"
-            stroke="#FFFFFF"
-            strokeWidth="2.2"
-            strokeLinecap="round"
-            opacity="0.95"
-          />
+          {/* Left diagonal (top to center) */}
           <path
-            d="M 6 -5.5 L 6 -8.5"
+            d="M -7 -8 L 0 2"
             stroke="#FFFFFF"
-            strokeWidth="2.2"
+            strokeWidth="3"
             strokeLinecap="round"
-            opacity="0.95"
+            strokeLinejoin="round"
+            fill="none"
           />
           
-          {/* Top Connecting Arc */}
+          {/* Right diagonal (center to top) */}
           <path
-            d="M -6 -8.5 Q 0 -10.5 6 -8.5"
-            fill="none"
+            d="M 0 2 L 7 -8"
             stroke="#FFFFFF"
-            strokeWidth="2.2"
+            strokeWidth="3"
             strokeLinecap="round"
-            opacity="0.95"
+            strokeLinejoin="round"
+            fill="none"
           />
           
-          {/* Bottom Connecting Arc */}
+          {/* Right vertical stroke */}
           <path
-            d="M -6 1.5 Q 0 3.5 6 1.5"
-            fill="none"
+            d="M 7 -8 L 7 6"
             stroke="#FFFFFF"
-            strokeWidth="2.2"
+            strokeWidth="3"
             strokeLinecap="round"
-            opacity="0.95"
+            strokeLinejoin="round"
+            fill="none"
           />
           
-          {/* Center connecting line for depth */}
-          <line
-            x1="-2"
-            y1="-2"
-            x2="2"
-            y2="-2"
-            stroke="#FFFFFF"
-            strokeWidth="1.5"
-            opacity="0.6"
+          {/* Center point accent */}
+          <circle
+            cx="0"
+            cy="2"
+            r="1.5"
+            fill="#FFFFFF"
+            opacity="0.9"
           />
         </g>
       </svg>
 
       {/* Logo Text with gradient effect */}
-      {showText && (
+      {showText && !iconOnly && (
         <span 
           className={`${currentSize.text} font-bold tracking-tight bg-gradient-to-r ${
             isWhite 

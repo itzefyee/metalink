@@ -1,0 +1,380 @@
+[
+  {
+    "productId": "brake-rotor-001",
+    "widthMm": null,
+    "heightMm": null,
+    "depthMm": null,
+    "diameterMm": 32,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": 45,
+    "loadMaxKn": 45,
+    "weightKg": 9.2,
+    "metadata": {
+      "tolerance": "Face runout ≤ 0.03 mm",
+      "materialHint": "high carbon cast iron",
+      "operatingTemp": "Up to 650°C continuous"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "connection-bracket-001",
+    "widthMm": 120,
+    "heightMm": 80,
+    "depthMm": 10,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": 50,
+    "loadMaxKn": 50,
+    "weightKg": 0.75,
+    "metadata": {
+      "tolerance": "±0.5mm",
+      "materialHint": "grade s355 steel",
+      "operatingTemp": "-40°C to +200°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "coupling-002",
+    "widthMm": null,
+    "heightMm": null,
+    "depthMm": null,
+    "diameterMm": 25,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": 0.05,
+    "loadMaxKn": 0.05,
+    "weightKg": 0.15,
+    "metadata": {
+      "tolerance": "±0.02mm bore",
+      "materialHint": "aluminum alloy",
+      "operatingTemp": "-20°C to +80°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "custom-bracket-001",
+    "widthMm": null,
+    "heightMm": null,
+    "depthMm": null,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": null,
+    "metadata": {
+      "tolerance": "±0.1mm",
+      "materialHint": "6061-t6 aluminum",
+      "operatingTemp": "-50°C to +120°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "encoder-001",
+    "widthMm": null,
+    "heightMm": null,
+    "depthMm": null,
+    "diameterMm": 35,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": 0.25,
+    "metadata": {
+      "tolerance": "±0.1° accuracy",
+      "materialHint": "aluminum housing",
+      "operatingTemp": "-10°C to +70°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "gallows-frame-001",
+    "widthMm": 450,
+    "heightMm": null,
+    "depthMm": null,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": 8,
+    "loadMaxKn": 8,
+    "weightKg": 180,
+    "metadata": {
+      "tolerance": "Frame squareness ±2 mm",
+      "materialHint": "hot dip galvanized steel",
+      "operatingTemp": "-20°C to +80°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "hex-bolt-m12",
+    "widthMm": 80,
+    "heightMm": null,
+    "depthMm": null,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": 0.095,
+    "metadata": {
+      "tolerance": "6g thread tolerance",
+      "materialHint": "alloy steel",
+      "operatingTemp": "-40°C to +150°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "hex-nut-m12",
+    "widthMm": null,
+    "heightMm": null,
+    "depthMm": null,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": 0.015,
+    "metadata": {
+      "tolerance": "6H thread tolerance",
+      "materialHint": "alloy steel",
+      "operatingTemp": "-40°C to +150°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "linear-actuator-001",
+    "widthMm": 300,
+    "heightMm": 50,
+    "depthMm": 50,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": 1,
+    "loadMaxKn": 1,
+    "weightKg": 1.8,
+    "metadata": {
+      "tolerance": "±0.1mm",
+      "materialHint": "stainless steel",
+      "operatingTemp": "-40°C to +85°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "mounting-bracket-001",
+    "widthMm": 140,
+    "heightMm": 90,
+    "depthMm": 20,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": 0.5,
+    "loadMaxKn": 0.5,
+    "weightKg": 0.8,
+    "metadata": {
+      "tolerance": "±0.1mm",
+      "materialHint": "steel",
+      "operatingTemp": "-40°C to +100°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "pressure-sensor-001",
+    "widthMm": 50,
+    "heightMm": 25,
+    "depthMm": 15,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": 0.12,
+    "metadata": {
+      "tolerance": "±0.25% FS",
+      "materialHint": "stainless steel",
+      "operatingTemp": "-40°C to +125°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "servo-motor-001",
+    "widthMm": 120,
+    "heightMm": 80,
+    "depthMm": 65,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": 0.05,
+    "loadMaxKn": 0.05,
+    "weightKg": 2.1,
+    "metadata": {
+      "tolerance": "±0.02mm",
+      "materialHint": "aluminum housing",
+      "operatingTemp": "-20°C to +80°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "servo-motor-002",
+    "widthMm": 90,
+    "heightMm": 60,
+    "depthMm": 50,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": 0.025,
+    "loadMaxKn": 0.025,
+    "weightKg": 1.4,
+    "metadata": {
+      "tolerance": "±0.01mm",
+      "materialHint": "aluminum housing",
+      "operatingTemp": "-10°C to +70°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "servo-motor-003",
+    "widthMm": 150,
+    "heightMm": 100,
+    "depthMm": 80,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": 0.1,
+    "loadMaxKn": 0.1,
+    "weightKg": 3.8,
+    "metadata": {
+      "tolerance": "±0.03mm",
+      "materialHint": "cast iron housing",
+      "operatingTemp": "-30°C to +90°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "socket-head-m8",
+    "widthMm": 40,
+    "heightMm": null,
+    "depthMm": null,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": 0.032,
+    "metadata": {
+      "tolerance": "6g thread tolerance",
+      "materialHint": "alloy steel",
+      "operatingTemp": "-40°C to +150°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "steel-angle-001",
+    "widthMm": 50,
+    "heightMm": 50,
+    "depthMm": null,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": 6000,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": 14.6,
+    "metadata": {
+      "tolerance": "±1mm",
+      "materialHint": "grade s275 steel",
+      "operatingTemp": "-40°C to +200°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "steel-beam-001",
+    "widthMm": null,
+    "heightMm": null,
+    "depthMm": null,
+    "diameterMm": null,
+    "thicknessMm": 67.564,
+    "lengthMm": 304.79999999999995,
+    "loadMinKn": 120,
+    "loadMaxKn": 120,
+    "weightKg": 89.4,
+    "metadata": {
+      "tolerance": "±0.5 mm rolled tolerance",
+      "materialHint": "grade s355 structural steel",
+      "operatingTemp": "-40°C to +200°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "steel-channel-001",
+    "widthMm": 100,
+    "heightMm": 50,
+    "depthMm": null,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": 6000,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": 26.1,
+    "metadata": {
+      "tolerance": "±1.5mm",
+      "materialHint": "grade s355 steel",
+      "operatingTemp": "-40°C to +200°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "steel-plate-001",
+    "widthMm": 2000,
+    "heightMm": 1000,
+    "depthMm": 10,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": 157,
+    "metadata": {
+      "tolerance": "±0.5mm thickness",
+      "materialHint": "grade s235 steel",
+      "operatingTemp": "-20°C to +150°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "surgical-drill-guide-001",
+    "widthMm": 150,
+    "heightMm": null,
+    "depthMm": null,
+    "diameterMm": 3.2,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": 0.45,
+    "metadata": {
+      "tolerance": "Sleeve runout ±0.02 mm",
+      "materialHint": "surgical grade stainless steel",
+      "operatingTemp": "Autoclave safe to 134°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  },
+  {
+    "productId": "washer-m12",
+    "widthMm": 24,
+    "heightMm": 2.5,
+    "depthMm": null,
+    "diameterMm": null,
+    "thicknessMm": null,
+    "lengthMm": null,
+    "loadMinKn": null,
+    "loadMaxKn": null,
+    "weightKg": 0.008,
+    "metadata": {
+      "tolerance": "±0.1mm thickness",
+      "materialHint": "stainless steel a2",
+      "operatingTemp": "-200°C to +400°C"
+    },
+    "updatedAt": "2025-11-25T15:50:14.820128+00:00"
+  }
+]

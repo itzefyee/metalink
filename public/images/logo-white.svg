@@ -20,14 +20,10 @@
   <circle cx="22" cy="22" r="20" fill="url(#metalinkGradientWhite)" filter="url(#metalinkShadowWhite)"/>
   
   <g transform="translate(22, 22)">
-    <ellipse cx="-6" cy="-2" rx="4.5" ry="3.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-    <path d="M -6 -5.5 L -6 -8.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-    <ellipse cx="6" cy="-2" rx="4.5" ry="3.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-    <path d="M 6 -5.5 L 6 -8.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-    <path d="M -6 -8.5 Q 0 -10.5 6 -8.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-    <path d="M -6 1.5 Q 0 3.5 6 1.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.95"/>
-    <line x1="-2" y1="-2" x2="2" y2="-2" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+    <path d="M -7 -8 L -7 6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M -7 -8 L 0 2" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 0 2 L 7 -8" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 7 -8 L 7 6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="0" cy="2" r="1.5" fill="#FFFFFF" opacity="0.9"/>
   </g>
 </svg>
-
-

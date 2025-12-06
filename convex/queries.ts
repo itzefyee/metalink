@@ -125,7 +125,7 @@ export const searchProducts = query({
   args: {
     category: v.optional(v.string()),
     materialFamily: v.optional(v.string()),
-    componentType: v.optional(v.string()),
+    componentType: v.optional(v.id("componentTaxonomy")),
   },
   handler: async (ctx, args) => {
     // Use conditional logic to build the correct query

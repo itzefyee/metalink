@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ConvexClientProvider from "@/components/ConvexClientProvider";
 import { AuthProvider } from "@/components/auth/AuthProvider";
-import Chatbot from "@/components/Chatbot";
+import MetalbotAssistant from "@/components/chatbot/MetalbotAssistant";
 import { QueryProvider } from "@/providers/QueryProvider";
 
 const inter = Inter({
@@ -15,6 +15,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Metalink - AI-Powered CAD Generation",
   description: "Transform your ideas into production-ready technical drawings with cutting-edge AI technology.",
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    apple: [
+      { url: '/apple-icon.svg', type: 'image/svg+xml' }
+    ]
+  },
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
@@ -32,7 +42,7 @@ export default function RootLayout({
           <ConvexClientProvider>
             <AuthProvider>
               {children}
-              <Chatbot />
+              <MetalbotAssistant />
             </AuthProvider>
           </ConvexClientProvider>
         </QueryProvider>

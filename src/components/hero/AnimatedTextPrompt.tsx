@@ -32,6 +32,7 @@ export default function AnimatedTextPrompt({
   // Use refs for animation timing to leverage requestAnimationFrame
   const animationFrameRef = useRef<number | undefined>(undefined);
   const lastUpdateTimeRef = useRef<number>(0);
+  const updateAnimationRef = useRef<(timestamp: number) => void | undefined>(undefined);
 
   // Memoized animation update function using requestAnimationFrame
   const updateAnimation = useCallback(
@@ -50,7 +51,9 @@ export default function AnimatedTextPrompt({
             setDisplayedText(currentPrompt.slice(0, displayedText.length + 1));
             lastUpdateTimeRef.current = timestamp;
           }
-          animationFrameRef.current = requestAnimationFrame(updateAnimation);
+          if (updateAnimationRef.current) {
+            animationFrameRef.current = requestAnimationFrame(updateAnimationRef.current);
+          }
         } else {
           // Finished typing, pause before deleting
           setIsTyping(false);
@@ -69,7 +72,9 @@ export default function AnimatedTextPrompt({
             setDisplayedText(displayedText.slice(0, -1));
             lastUpdateTimeRef.current = timestamp;
           }
-          animationFrameRef.current = requestAnimationFrame(updateAnimation);
+          if (updateAnimationRef.current) {
+            animationFrameRef.current = requestAnimationFrame(updateAnimationRef.current);
+          }
         } else {
           // Finished deleting, pause before next prompt
           setIsDeleting(false);
@@ -96,6 +101,11 @@ export default function AnimatedTextPrompt({
       prefersReducedMotion,
     ]
   );
+
+  // Update ref when callback changes
+  useEffect(() => {
+    updateAnimationRef.current = updateAnimation;
+  }, [updateAnimation]);
 
   useEffect(() => {
     // If reduced motion is preferred, show static text
@@ -128,14 +138,14 @@ export default function AnimatedTextPrompt({
         aria-atomic="true"
       >
         <div className="flex items-start space-x-2">
-          <span className="text-blue-400 text-2xl md:text-3xl font-mono flex-shrink-0">
+          <span className="text-blue-400 text-xs md:text-base font-mono flex-shrink-0">
           </span>
           <div className="flex-1">
-            <p className="text-xl md:text-2xl lg:text-3xl font-medium text-white">
+            <p className="text-xs md:text-sm lg:text-lg font-medium text-white">
               {displayedText}
               {!prefersReducedMotion && (
                 <motion.span
-                  className="inline-block w-0.5 bg-white ml-1 h-6 md:h-8"
+                  className="inline-block w-0.5 bg-white ml-1 h-4 md:h-5"
                   animate={{ opacity: [1, 0] }}
                   transition={{
                     duration: 0.8,

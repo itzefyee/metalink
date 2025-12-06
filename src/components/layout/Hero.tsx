@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-br from-primary via-blue-600 to-blue-700 text-white overflow-hidden pt-16 pb-16 min-h-[calc(110vh-4rem)] flex items-center">
+    <section className="relative text-white overflow-hidden pt-16 pb-16 min-h-[calc(110vh-4rem)] flex items-center" style={{ background: 'var(--hero-blue-gradient)' }}>
       <TechnicalPattern />
       <div className="absolute inset-0 bg-black/30"></div>
 
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
           
           {/* Chat Interface Container */}
           <div className="w-full max-w-2xl mb-8">
-            <div className="catalog-glass-container aspect-[4/3] w-full overflow-hidden p-3 sm:p-4 flex flex-col gap-3">
+            <div className="catalog-glass-container aspect-[4/3] w-full overflow-hidden rounded-2xl p-3 sm:p-4 flex flex-col gap-3">
               {/* Animated Prompt Display */}
               <div className="relative rounded-2xl bg-gradient-to-br from-white/35 via-white/15 to-white/5 px-3 py-2 sm:px-5 sm:py-2.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)]">
                 
@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
                   <AnimatedTextPrompt 
                     className="w-full"
                     prompts={[
-                      'A 320MM VENTED BRAKE ROTOR WITH 5 M12 HOLES ON 114.3MM PCD',
+                      'A 320MM VENTED BRAKE ROTOR, 5 M12 HOLES ON 114.3MM PCD',
                       'A STEEL BRACKET WITH 4 MOUNTING HOLES',
                       'A CIRCULAR PLATE WITH CENTER HOLE',
                     ]}

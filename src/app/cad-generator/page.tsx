@@ -4,7 +4,7 @@ import React, { Suspense } from 'react';
 import dynamic from 'next/dynamic';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import ImprovedCADGenerator from '@/components/cad/ImprovedCADGenerator';
+import CADGenerator from '@/components/cad/CADGenerator';
 import PageHero from '@/components/layout/PageHero';
 
 // Dynamically import 3D component to avoid SSR issues
@@ -138,8 +138,8 @@ export default function CADGeneratorPage() {
             />
           </div>
           
-          <Suspense fallback={<div className="text-sm text-gray-600">Loading CAD generator...</div>}>
-            <ImprovedCADGenerator />
+          <Suspense fallback={<div className="text-sm text-muted-foreground">Loading CAD generator...</div>}>
+            <CADGenerator />
           </Suspense>
         </div>
       </main>

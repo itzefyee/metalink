@@ -52,17 +52,7 @@ const CADPreview3D: React.FC<CADPreview3DProps> = ({
   const wireframeRef = useRef<THREE.LineSegments | null>(null);
   const animationFrameRef = useRef<number | null>(null);
 
-  // Parse file if provided
-  useEffect(() => {
-    if (file && !initialModelData) {
-      parseFile(file);
-    } else if (initialModelData) {
-      setModelData(initialModelData);
-      setIsLoading(false);
-      if (onParsingComplete) onParsingComplete(true);
-    }
-  }, [file, initialModelData, onParsingComplete]);
-
+  // Parse file function
   const parseFile = async (file: File) => {
     setIsLoading(true);
     setLoadingProgress(0);
@@ -108,6 +98,17 @@ const CADPreview3D: React.FC<CADPreview3DProps> = ({
       if (onPreviewLoaded) onPreviewLoaded(false);
     }
   };
+
+  // Parse file if provided
+  useEffect(() => {
+    if (file && !initialModelData) {
+      parseFile(file);
+    } else if (initialModelData) {
+      setModelData(initialModelData);
+      setIsLoading(false);
+      if (onParsingComplete) onParsingComplete(true);
+    }
+  }, [file, initialModelData, onParsingComplete, parseFile]);
 
   // Initialize Three.js scene
   useEffect(() => {
@@ -539,7 +540,7 @@ const CADPreview3D: React.FC<CADPreview3DProps> = ({
   return (
     <div 
       ref={containerRef}
-      className={`w-full bg-gradient-to-br from-slate-50 to-blue-50 rounded-lg border-2 border-gray-200 relative overflow-hidden ${
+      className={`w-full bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl border-2 border-gray-200 relative overflow-hidden ${
         isFullscreen 
           ? 'fixed inset-0 z-50 h-screen w-screen rounded-none' 
           : 'h-[350px] md:h-[450px]'

@@ -1,0 +1,23 @@
+{
+  "name": "Metalink - AI-Powered CAD Generation",
+  "short_name": "Metalink",
+  "description": "Transform your ideas into production-ready technical drawings with cutting-edge AI technology.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#3B82F6",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/"
+}
+

@@ -1,0 +1,166 @@
+[
+  {
+    "id": "00000000-0000-4000-8000-000000000106",
+    "canonicalName": "Brake Rotor",
+    "category": "structural",
+    "description": "High-carbon brake rotor or disc",
+    "keywords": [
+      "rotor",
+      "disc",
+      "brake",
+      "ø",
+      "pcd"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-00000000010a",
+    "canonicalName": "Custom Bracket",
+    "category": "custom",
+    "description": "Custom fabricated bracket or mount",
+    "keywords": [
+      "bracket",
+      "mount",
+      "adapter",
+      "fixture"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-00000000010c",
+    "canonicalName": "Encoder / Sensor",
+    "category": "robotic",
+    "description": "Feedback encoders and sensors",
+    "keywords": [
+      "encoder",
+      "sensor",
+      "resolver"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000105",
+    "canonicalName": "Gallows Frame",
+    "category": "structural",
+    "description": "Pre-fabricated lifting or support frame",
+    "keywords": [
+      "frame",
+      "gallows",
+      "support",
+      "assembly"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000107",
+    "canonicalName": "Hex Bolt",
+    "category": "fasteners",
+    "description": "Metric hex head bolt",
+    "keywords": [
+      "bolt",
+      "m12",
+      "fastener",
+      "grade 8.8"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000108",
+    "canonicalName": "Hex Nut",
+    "category": "fasteners",
+    "description": "Metric hex nut",
+    "keywords": [
+      "nut",
+      "m12",
+      "fastener"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000102",
+    "canonicalName": "Linear Actuator",
+    "category": "robotic",
+    "description": "Electromechanical actuator for push/pull motion",
+    "keywords": [
+      "linear",
+      "actuator",
+      "ram",
+      "pusher"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-00000000010b",
+    "canonicalName": "Precision Coupling",
+    "category": "robotic",
+    "description": "Shaft or servo couplings",
+    "keywords": [
+      "coupling",
+      "shaft",
+      "servo"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000101",
+    "canonicalName": "Servo Motor",
+    "category": "robotic",
+    "description": "Rotary actuator used in automation and robotics",
+    "keywords": [
+      "servo",
+      "motor",
+      "actuator",
+      "pan-tilt",
+      "gearbox"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000104",
+    "canonicalName": "Steel Plate",
+    "category": "structural",
+    "description": "Flat stock plate for fabrication",
+    "keywords": [
+      "plate",
+      "sheet",
+      "gusset"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000103",
+    "canonicalName": "Structural Beam",
+    "category": "structural",
+    "description": "Hot rolled or fabricated beam for frames",
+    "keywords": [
+      "beam",
+      "i-beam",
+      "channel",
+      "girder"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000109",
+    "canonicalName": "Washer",
+    "category": "fasteners",
+    "description": "Flat washer or spacer",
+    "keywords": [
+      "washer",
+      "spacer"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  }
+]

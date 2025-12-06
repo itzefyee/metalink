@@ -33,6 +33,7 @@ export interface CADGenerationResult {
   status: 'completed' | 'failed' | 'processing';
   model_data?: string; // base64 encoded
   file_url?: string;
+  stepFileId?: string; // Convex storage ID
   parameters: {
     format: string;
     units: string;

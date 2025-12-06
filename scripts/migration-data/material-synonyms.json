@@ -1,0 +1,103 @@
+[
+  {
+    "id": "00000000-0000-4000-9000-000000000205",
+    "family": "alloy steel",
+    "synonyms": [
+      "alloy steel",
+      "grade 8.8",
+      "grade 8",
+      "quenched"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-9000-000000000203",
+    "family": "aluminum",
+    "synonyms": [
+      "aluminum",
+      "aluminium",
+      "6061",
+      "7075",
+      "aluminum housing",
+      "anodized"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-9000-000000000208",
+    "family": "brass",
+    "synonyms": [
+      "brass",
+      "cuzn",
+      "copper alloy"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-9000-000000000204",
+    "family": "cast iron",
+    "synonyms": [
+      "cast iron",
+      "high carbon",
+      "ductile iron",
+      "grey iron"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-9000-000000000206",
+    "family": "polymer",
+    "synonyms": [
+      "polymer",
+      "nylon",
+      "abs",
+      "pa12",
+      "composite"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-9000-000000000202",
+    "family": "stainless",
+    "synonyms": [
+      "stainless",
+      "316l",
+      "304",
+      "surgical grade",
+      "inox"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-9000-000000000201",
+    "family": "steel",
+    "synonyms": [
+      "steel",
+      "carbon steel",
+      "mild steel",
+      "s355",
+      "s235",
+      "hot rolled"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  },
+  {
+    "id": "00000000-0000-4000-9000-000000000207",
+    "family": "titanium",
+    "synonyms": [
+      "titanium",
+      "ti-6al-4v",
+      "ti64",
+      "grade 5"
+    ],
+    "createdAt": "2025-11-25T15:53:06.203466+00:00",
+    "updatedAt": "2025-11-25T15:53:06.203466+00:00"
+  }
+]
