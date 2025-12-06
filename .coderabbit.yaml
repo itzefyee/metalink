@@ -1,0 +1,21 @@
+language: "en-US"
+early_access: true
+reviews:
+  profile: "assertive"
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+  path_filters:
+    - "!**/*.lock"
+    - "!**/dist/**"
+  
+chat:
+  auto_reply: true
+
+tone_instructions: "Focus on: 1) Type safety violations, 2) Performance issues in 3D rendering, 3) Standards compliance logic errors, 4) API error handling"
+
